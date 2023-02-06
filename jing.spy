@@ -163,29 +163,11 @@ js_config:
   Wait: 2
 - Container:
   - - 1
-  Env: jd_nzmhurl
-  KeyWord:
-  - - jd_nzmhurl
-  Name: 【抽奖】女装盲盒抽京豆
-  Script: jd_nzmh.js
-  TimeOut: 0
-  Wait: 2
-- Container:
-  - - 1
   Env: DPLHTY
   KeyWord:
   - - DPLHTY
   Name: 【开卡】大牌联合
-  Script: jd_opencardLH.js
-  TimeOut: 0
-  Wait: 2
-- Container:
-  - - 1
-  Env: JD_JOYOPEN
-  KeyWord:
-  - - JD_JOYOPEN
-  Name: 【开卡】JoyJd任务脚本
-  Script: jd_opencard_joyopen.js
+  Script: shufflewzc_faker3_main/jd_opencardLH.js
   TimeOut: 0
   Wait: 2
 - Container:
@@ -631,5 +613,14 @@ js_config:
   - - jd_cjhydz_microDz_Id
   Name: 【proenvc】微定制
   Script: jd_cjhydz_microDz.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - - 1
+  Env: jd_lzkj_interactsaas_yqhyrh_activityId
+  KeyWord:
+  - - jd_lzkj_interactsaas_yqhyrh_activityId
+  Name: 【Faker】lzkj_interactsaas邀请好友入会
+  Script: jd_lzkj_interactsaas_yqhyrh.js
   TimeOut: 0
   Wait: 2
