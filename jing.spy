@@ -624,3 +624,12 @@ js_config:
   Script: jd_lzkj_interactsaas_yqhyrh.js
   TimeOut: 0
   Wait: 2
+- Container:
+  - - 1
+  Env: opencard_id
+  KeyWord:
+  - - opencard_id
+  Name: 【KR】JoinCommon金币卡开卡专用
+  Script: KingRan_KR_main/jd_opencardJBK.js
+  TimeOut: 0
+  Wait: 2
