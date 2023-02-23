@@ -457,12 +457,10 @@ js_config:
   Wait: 2
 - Container:
   - - 1
-  Env: jd_lzkjInteractId
+  Env: jd_lzkjInteractUrl
   KeyWord:
-  - - jd_lzkjInteractId
   - - jd_lzkjInteractUrl
   Name: 【船长】Interact邀请有礼
-  RegularRules: '@[\d]{19}@0'
   Script: jd_lzkjInteract.py
   TimeOut: 0
   Wait: 2
