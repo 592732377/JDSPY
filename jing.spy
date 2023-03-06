@@ -631,3 +631,30 @@ js_config:
   Script: KingRan_KR_main/jd_opencardJBK.js
   TimeOut: 0
   Wait: 2
+- Container:
+  - - 1
+  Env: jd_loreal_interact_ljqdysl_Ids
+  KeyWord:
+  - - jd_loreal_interact_ljqdysl_Ids
+  Name: loreal_interact累计签到有好礼
+  Script: jd_loreal_interact_ljqdysl.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - - 1
+  Env: jd_lzkj_interactsaas_qrqd_Ids
+  KeyWord:
+  - - jd_lzkj_interactsaas_qrqd_Ids
+  Name: lzkj_interactsaas签到
+  Script: jd_lzkj_interactsaas_qrqd.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - - 1
+  Env: jd_lzkj_interactsaas_rlqd_Ids
+  KeyWord:
+  - - jd_lzkj_interactsaas_rlqd_Ids
+  Name: lzkj_interactsaas日历签到
+  Script: jd_lzkj_interactsaas_rlqd.js
+  TimeOut: 0
+  Wait: 2
