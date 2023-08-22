@@ -1,6 +1,6 @@
 js_config:
 - Container:
-  - - 1
+  - []
   Env: jd_wxCartKoi_activityId
   KeyWord:
   - - jd_wxCartKoi_activityId
@@ -9,7 +9,7 @@ js_config:
   TimeOut: 0
   Wait: 5
 - Container:
-  - - 1
+  - []
   Env: WXGAME_ACT_ID
   KeyWord:
   - - WXGAME_ACT_ID
@@ -18,7 +18,7 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: jd_wxSecond_activityId
   KeyWord:
   - - jd_wxSecond_activityId
@@ -27,7 +27,7 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: computer_activityId
   KeyWord:
   - - computer_activityId
@@ -37,7 +37,7 @@ js_config:
   TimeOut: 0
   Wait: 5
 - Container:
-  - - 1
+  - []
   Env: jd_fxyl_activityId
   KeyWord:
   - - jd_fxyl_activityId
@@ -47,41 +47,41 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: jd_cjhy_wxKnowledgeActivity_activityId
   KeyWord:
   - - jd_cjwxKnowledgeActivity_activityId
   - - jd_cjhy_wxKnowledgeActivity_activityId
   - - jd_wxKnowledgeActivity_activityUrl
+  RegularRules: 'cjhy@[\d|a-z]{32}@0'
   Name: 【云上】CJ知识超人
-  RegularRules: cjhy@[\d|a-z]{32}@0
   Script: jd_cjhy_wxKnowledgeActivity.js
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: jd_lzkj_wxKnowledgeActivity_activityId
   KeyWord:
   - - jd_lzkj_wxKnowledgeActivity_activityId
   - - jd_wxKnowledgeActivity_activityId
   - - jd_wxKnowledgeActivity_activityUrl
   Name: 【云上】LJ知识超人
-  RegularRules: lzkj@[\d|a-z]{32}@0
+  RegularRules: 'lzkj@[\d|a-z]{32}@0'
   Script: jd_lzkj_wxKnowledgeActivity.js
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: jd_cjhydz_wxTeam_Id
   KeyWord:
-  - - jd_cjhydz_wxTeam_Id
   - - jd_cjhy_activityId
+  - - jd_cjhydz_wxTeam_Id
   Name: 【Faker】CJ瓜分京豆
   Script: jd_cjhydz_wxTeam.js
   TimeOut: 0
   Wait: 5
 - Container:
-  - - 1
+  - []
   Env: jd_lzkjdz_wxTeam_Id
   KeyWord:
   - - jd_zdjr_activityId
@@ -91,7 +91,7 @@ js_config:
   TimeOut: 0
   Wait: 5
 - Container:
-  - - 1
+  - []
   Env: PKC_TXGZYL
   KeyWord:
   - - PKC_TXGZYL
@@ -100,7 +100,7 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: PKC_GZYL
   KeyWord:
   - - PKC_GZYL
@@ -109,31 +109,29 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: jd_cjhy_wxCollectionActivityId
   KeyWord:
   - - jd_cjhy_wxCollectionActivityId
   - - jd_wxCollectionActivity_activityUrl
-  - - jd_wxCollectionActivityUrl
   Name: 【抽奖】cjhy加购物车
-  RegularRules: cjhy@[\d|a-z]{32}@0
+  RegularRules: 'cjhy@[\d|a-z]{32}@0'
   Script: jd_cjhy_wxCollectionActivity.js
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: jd_lzkj_wxCollectionActivityId
   KeyWord:
   - - jd_lzkj_wxCollectionActivityId
   - - jd_wxCollectionActivity_activityUrl
-  - - jd_wxCollectionActivityUrl
   Name: 【抽奖】lzkj加购物车
-  RegularRules: lzkj@[\d|a-z]{32}@0
+  RegularRules: 'lzkj@[\d|a-z]{32}@0'
   Script: jd_lzkj_wxCollectionActivity.js
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: jd_wxCollectCard_activityId
   KeyWord:
   - - jd_wxCollectCard_activityId
@@ -142,7 +140,7 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: jd_wxShopFollowActivity_activityId
   KeyWord:
   - - jd_wxShopFollowActivity_activityId
@@ -153,7 +151,7 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: jd_mhurlLis
   KeyWord:
   - - jd_mhurlLis
@@ -162,16 +160,44 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
+  Env: jd_nzmhurl
+  KeyWord:
+  - - jd_nzmhurl
+  Name: 【抽奖】女装盲盒抽京豆
+  Script: jd_nzmh.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
   Env: DPLHTY
   KeyWord:
   - - DPLHTY
   Name: 【开卡】大牌联合
-  Script: shufflewzc_faker3_main/jd_opencardLH.js
+  Script: jd_opencardLH.js
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
+  Env: jd_cjhydz_microDz_Id
+  KeyWord:
+  - - jd_wdz_activityId
+  - - jd_cjhydz_microDz_Id
+  Name: 【Faker】微定制
+  Script: jd_cjhydz_microDz.js
+  TimeOut: 0
+  Wait: 10
+- Container:
+  - []
+  Env: JD_JOYOPEN
+  KeyWord:
+  - - JD_JOYOPEN
+  Name: 【开卡】JoyJd任务脚本
+  Script: jd_opencard_joyopen.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
   Env: jd_openLuckBag_Id
   KeyWord:
   - - jd_wdz_openLuckBag_activityId
@@ -181,7 +207,112 @@ js_config:
   TimeOut: 0
   Wait: 5
 - Container:
-  - - 1
+  - []
+  Env: DPQDTK
+  KeyWord:
+  - - DPQDTK
+  Name: 【签到】店铺签到
+  Script: jd_dpqd.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Disable: 0
+  Env: M_WX_LUCK_DRAW_URL
+  KeyWord:
+  - - M_WX_LUCK_DRAW_URL
+  Name: 【M系】幸运抽奖
+  OverdueTime: 1800
+  Script: m_jd_wx_luckDraw.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Disable: 0
+  Env: M_WX_ADD_CART_URL
+  KeyWord:
+  - - M_WX_ADD_CART_URL
+  Name: 【M系】加购有礼
+  OverdueTime: 1800
+  Script: m_jd_wx_addCart.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Disable: 0
+  Env: M_WX_COLLECT_CARD_URL
+  KeyWord:
+  - - M_WX_COLLECT_CARD_URL
+  Name: 【M系】集卡抽奖
+  OverdueTime: 1800
+  Script: m_jd_wx_collectCard.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Disable: 0
+  Env: M_WX_CENTER_DRAW_URL
+  KeyWord:
+  - - M_WX_CENTER_DRAW_URL
+  Name: 【M系】老虎机抽奖
+  OverdueTime: 1800
+  Script: m_jd_wx_centerDraw.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Disable: 0
+  Env: M_FAV_SHOP_ARGV
+  KeyWord:
+  - - M_FAV_SHOP_ARGV
+  Name: 【M系】收藏有礼
+  OverdueTime: 1800
+  Script: m_jd_fav_shop_gift.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Disable: 0
+  Env: M_FOLLOW_SHOP_ARGV
+  KeyWord:
+  - - M_FOLLOW_SHOP_ARGV
+  Name: 【M系】关注有礼
+  OverdueTime: 1800
+  Script: m_jd_follow_shop.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: M_WX_SHOP_GIFT_URL
+  KeyWord:
+  - - M_WX_SHOP_GIFT_URL
+  Name: 【M系】关注有礼无线
+  OverdueTime: 1800
+  Script: m_jd_wx_shopGift.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: M_WX_FOLLOW_DRAW_URL
+  KeyWord:
+  - - M_WX_FOLLOW_DRAW_URL
+  Name: 【M系】关注抽奖
+  OverdueTime: 1800
+  Script: m_jd_wx_followDraw.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: M_WX_BUILD_DRAW_URL
+  KeyWord:
+  - - M_WX_BUILD_DRAW_URL
+  Name: 【M系】盖楼领奖
+  OverdueTime: 1800
+  Script: m_jd_wx_buildDraw.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
   Env: jinggengInviteJoin
   KeyWord:
   - - jinggengInviteJoin
@@ -190,7 +321,7 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: jd_inv_authorCode
   KeyWord:
   - - jd_inv_authorCode
@@ -200,7 +331,7 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: jd_wxShopGiftId
   KeyWord:
   - - jd_wxShopGiftId
@@ -209,7 +340,7 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: jd_joinCommonId
   KeyWord:
   - - jd_joinCommonId
@@ -218,7 +349,7 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: jd_shopLeagueId
   KeyWord:
   - - jd_shopLeagueId
@@ -227,7 +358,7 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: jd_shopCollectGiftId
   KeyWord:
   - - jd_shopCollectGiftId
@@ -236,17 +367,16 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
-  Env: jd_cjhydz_microDz_Id
+  - []
+  Env: jd_wdz_activityId
   KeyWord:
   - - jd_wdz_activityId
-  - - jd_cjhydz_microDz_Id
-  Name: 【Faker】微定制
-  Script: jd_cjhydz_microDz.js
+  Name: 【船长】微定制组队
+  Script: jd_wdz.py
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: jd_wxCompleteInfoId
   KeyWord:
   - - jd_wxCompleteInfoId
@@ -256,7 +386,25 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
+  Env: M_WX_WDZ_ID
+  KeyWord:
+  - - M_WX_WDZ_ID
+  Name: 【M系列】微定制
+  Script: m_jd_wx_microDz.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: M_WX_SECOND_DRAW_URL
+  KeyWord:
+  - - M_WX_SECOND_DRAW_URL
+  Name: 【M系列】读秒拼手速
+  Script: m_jd_wx_secondDraw.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
   Env: jd_wxBirthGiftsId
   KeyWord:
   - - jd_wxBirthGiftsId
@@ -265,7 +413,7 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: jd_lzkj_wxBuildActivity_activityId
   KeyWord:
   - - jd_lzkj_wxBuildActivity_activityId
@@ -275,7 +423,7 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: JD_Lottery
   KeyWord:
   - - JD_Lottery
@@ -284,7 +432,16 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
+  Env: VENDER_ID
+  KeyWord:
+  - - VENDER_ID
+  Name: 【Faker库】入会开卡领取礼包通用
+  Script: jd_card_force.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
   Env: whx_drawShopGift
   KeyWord:
   - - whx_drawShopGift
@@ -293,7 +450,7 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: prodevactCode
   KeyWord:
   - - prodevactCode
@@ -302,7 +459,7 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: jd_cjhy_sevenDay_ids
   KeyWord:
   - - jd_cjhy_sevenDay_ids
@@ -311,7 +468,7 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: cjhy_signActivity_ids
   KeyWord:
   - - cjhy_signActivity_ids
@@ -320,7 +477,7 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: jd_lzkj_sevenDay_ids
   KeyWord:
   - - jd_lzkj_sevenDay_ids
@@ -329,7 +486,7 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: jd_lzkj_signActivity2_ids
   KeyWord:
   - - jd_lzkj_signActivity2_ids
@@ -338,7 +495,7 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: jd_cjhy_daily_ids
   KeyWord:
   - - jd_cjhy_daily_ids
@@ -347,7 +504,7 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: jd_lzkj_daily_ids
   KeyWord:
   - - jd_lzkj_daily_ids
@@ -356,7 +513,7 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: jd_cjhy_wxGameActivity_activityId
   KeyWord:
   - - jd_cjhy_wxGameActivity_activityId
@@ -365,60 +522,60 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: jd_cjhy_wxShopFollowActivity_activityId
   KeyWord:
   - - jd_cjhy_wxShopFollowActivity_activityId
   - - jd_wxShopFollowActivity_activityUrl
   Name: 【Faker】cjhy关注店铺有礼
-  RegularRules: cjhy@[\d|a-z]{32}@0
+  RegularRules: 'cjhy@[\d|a-z]{32}@0'
   Script: jd_cjhy_wxShopFollowActivity.js
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: jd_lzkj_wxShopFollowActivity_activityId
   KeyWord:
   - - jd_lzkj_wxShopFollowActivity_activityId
   - - jd_wxShopFollowActivity_activityUrl
   Name: 【Faker】lzkj关注店铺有礼
-  RegularRules: lzkj@[\d|a-z]{32}@0
+  RegularRules: 'lzkj@[\d|a-z]{32}@0'
   Script: jd_lzkj_wxShopFollowActivity.js
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: jd_cjhy_wxShopGift_ids
   KeyWord:
   - - jd_cjhy_wxShopGift_ids
   - - jd_wxShopGift_activityUrl
   Name: 【Faker】cjhy店铺礼包
-  RegularRules: cjhy@[\d|a-z]{32}@0
+  RegularRules: 'cjhy@[\d|a-z]{32}@0'
   Script: jd_cjhy_wxShopGift.js
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: jd_lzkj_wxShopGift_ids
   KeyWord:
   - - jd_lzkj_wxShopGift_ids
   - - jd_wxShopGift_activityUrl
   Name: 【Faker】lzkj店铺礼包
-  RegularRules: lzkj@[\d|a-z]{32}@0
+  RegularRules: 'lzkj@[\d|a-z]{32}@0'
   Script: jd_lzkj_wxShopGift.js
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: LUCK_DRAW_URL
   KeyWord:
   - - LUCK_DRAW_URL
   Name: 【Faker】店铺抽奖通用活动
-  Script: shufflewzc_faker3_main/jd_luck_draw.js
+  Script: jd_luck_draw.js
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: jd_txzj_lottery_id
   KeyWord:
   - - jd_txzj_lottery_id
@@ -427,7 +584,7 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: jd_drawCenter_activityId
   KeyWord:
   - - jd_drawCenter_activityId
@@ -436,7 +593,7 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: jd_txzj_sign_in_id
   KeyWord:
   - - jd_txzj_sign_in_id
@@ -445,7 +602,16 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
+  Env: jd_wxFansInterActionActivity_activityId
+  KeyWord:
+  - - jd_wxFansInterActionActivity_activityId
+  Name: 【Faker】粉丝互动通用
+  Script: jd_wxFansInterActionActivity.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
   Env: jd_txzj_collect_item_id
   KeyWord:
   - - jd_txzj_collect_item_id
@@ -456,7 +622,7 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: jd_lzkjInteractUrl
   KeyWord:
   - - jd_lzkjInteractUrl
@@ -465,7 +631,7 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: jd_lzkj_interactsaas_yqrhyl_activityId
   KeyWord:
   - - jd_lzkj_interactsaas_yqrhyl_activityId
@@ -474,7 +640,7 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: jd_shop_draw_ids
   KeyWord:
   - - jd_shop_draw_ids
@@ -483,7 +649,7 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: jd_shopGifts_ids
   KeyWord:
   - - jd_shopGifts_ids
@@ -493,61 +659,7 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
-  Env: jd_showInviteJoin_activityUrl
-  KeyWord:
-  - - jd_showInviteJoin_activityUrl
-  Name: 【KR】邀请入会赢好礼
-  Script: jd_jinggeng_showInviteJoin.js
-  TimeOut: 0
-  Wait: 2
-- Container:
-  - - 1
-  Env: jd_lzkj_loreal_invite_url
-  KeyWord:
-  - - jd_lzkj_loreal_invite_url
-  Name: 【KR】邀请入会有礼
-  Script: jd_lzkj_loreal_invite.js
-  TimeOut: 0
-  Wait: 2
-- Container:
-  - - 1
-  Env: jd_categoryUnion_activityId
-  KeyWord:
-  - - jd_categoryUnion_activityId
-  Name: 【KR】超级无线品类联合抽奖
-  Script: jd_categoryUnion_draw.js
-  TimeOut: 0
-  Wait: 2
-- Container:
-  - - 1
-  Env: yhyauthorCode
-  KeyWord:
-  - - yhyauthorCode
-  Name: 【KR】邀好友赢大礼
-  Script: jd_prodev.py
-  TimeOut: 0
-  Wait: 2
-- Container:
-  - - 1
-  Env: DPCJID
-  KeyWord:
-  - - DPCJID
-  Name: 【Faker3】店铺抽奖-JK
-  Script: jd_dpcj.py
-  TimeOut: 0
-  Wait: 2
-- Container:
-  - - 1
-  Env: jd_shopFollowGiftId
-  KeyWord:
-  - - jd_shopFollowGiftId
-  Name: 【TOULU】关注有礼-JK
-  Script: jd_shopFollowGift.py
-  TimeOut: 0
-  Wait: 2
-- Container:
-  - - 1
+  - []
   Env: jd_cjhy_completeInfoActivity_Ids
   KeyWord:
   - - jd_cjhy_completeInfoActivity_Ids
@@ -556,7 +668,25 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
+  Env: M_WX_SHARE_URL
+  KeyWord:
+  - - M_WX_SHARE_URL
+  Name: 【Faker】M分享有礼
+  Script: m_jd_wx_share.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: M_WX_TEAM_URL
+  KeyWord:
+  - - M_WX_TEAM_URL
+  Name: 【Faker】M组队瓜分
+  Script: m_jd_wx_team.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
   Env: jd_txzj_cart_item_id
   KeyWord:
   - - jd_txzj_cart_item_id
@@ -567,7 +697,7 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: jd_txzj_lottery_id
   KeyWord:
   - - jd_txzj_lottery_id
@@ -578,7 +708,16 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
+  Env: DPCJID
+  KeyWord:
+  - - DPCJID
+  Name: 【船长】店铺抽奖-JK
+  Script: jd_dpcj.py
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
   Env: jd_lzkj_interactsaas_gzspyl_activityId
   KeyWord:
   - - jd_lzkj_interactsaas_gzspyl_activityId
@@ -587,7 +726,7 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: jd_lzkj_interactsaas_gzyl_activityId
   KeyWord:
   - - jd_lzkj_interactsaas_gzyl_activityId
@@ -596,7 +735,7 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
+  - []
   Env: jd_lzkj_interactsaas_jgyl_activityId
   KeyWord:
   - - jd_lzkj_interactsaas_jgyl_activityId
@@ -605,16 +744,7 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
-  Env: jd_cjhydz_microDz_Id
-  KeyWord:
-  - - jd_cjhydz_microDz_Id
-  Name: 【proenvc】微定制
-  Script: jd_cjhydz_microDz.js
-  TimeOut: 0
-  Wait: 2
-- Container:
-  - - 1
+  - []
   Env: jd_lzkj_interactsaas_yqhyrh_activityId
   KeyWord:
   - - jd_lzkj_interactsaas_yqhyrh_activityId
@@ -623,38 +753,65 @@ js_config:
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
-  Env: opencard_id
+  - []
+  Env: jd_wxShopFollowId
   KeyWord:
-  - - opencard_id
-  Name: 【KR】JoinCommon金币卡开卡专用
-  Script: KingRan_KR_main/jd_opencardJBK.js
+  - - jd_wxShopFollowId
+  Name: 【船长】关注店铺有礼-JK
+  Script: jd_wxShopFollow.py
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
-  Env: jd_loreal_interact_ljqdysl_Ids
+  - []
+  Env: jd_prodev_actCode
   KeyWord:
-  - - jd_loreal_interact_ljqdysl_Ids
-  Name: loreal_interact累计签到有好礼
-  Script: jd_loreal_interact_ljqdysl.js
+  - - jd_prodev_actCode
+  Name: 【Faker】邀请好友入会得好礼
+  Script: jd_prodev.js
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
-  Env: jd_lzkj_interactsaas_qrqd_Ids
+  - []
+  Env: jd_wxTeam_activityUrl
   KeyWord:
-  - - jd_lzkj_interactsaas_qrqd_Ids
-  Name: lzkj_interactsaas签到
-  Script: jd_lzkj_interactsaas_qrqd.js
+  - - jd_wxTeam_activityUrl
+  Name: 【Faker】组队瓜分奖品
+  Script: jd_wxTeam.js
   TimeOut: 0
   Wait: 2
 - Container:
-  - - 1
-  Env: jd_lzkj_interactsaas_rlqd_Ids
+  - []
+  Env: jd_lzkj_loreal_perfectInfo_url
   KeyWord:
-  - - jd_lzkj_interactsaas_rlqd_Ids
-  Name: lzkj_interactsaas日历签到
-  Script: jd_lzkj_interactsaas_rlqd.js
+  - - jd_lzkj_loreal_perfectInfo_url
+  Name: 【Faker】完善有礼欧莱雅
+  Script: jd_lzkj_loreal_perfectInfo.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: jd_lzkj_loreal_share_url
+  KeyWord:
+  - - jd_lzkj_loreal_share_url
+  Name: 【Faker】分享有礼欧莱雅
+  Script: jd_lzkj_loreal_share.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: jd_shopSign_activityUrl
+  KeyWord:
+  - - jd_shopSign_activityUrl
+  Name: 【Faker】无线店铺签到（超级无线/超级会员）
+  Script: jd_shopSign.js
+  TimeOut: 0
+  Wait: 2
+- Container:
+  - []
+  Env: jd_shopDraw_venderId
+  KeyWord:
+  - - jd_shopDraw_venderId
+  Name: 【Faker】店铺左侧刮刮乐
+  Script: jd_shopDraw.js
   TimeOut: 0
   Wait: 2
